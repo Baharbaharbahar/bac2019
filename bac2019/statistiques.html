@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="statistiques.php" method="post">
+        <fieldset>
+            <legend>Statistique </legend>
+            <label for="">Theme du sandage </label>
+            <select name="sandage" id="sandage">
+                <option value="choisir un Theme">choisir un Theme</option>
+                <option value="les reseaux sociaux">les reseaux sociaux</option>
+                <option value="les jeux video">les jeux video</option>
+            </select> <br>
+            <input type="submit" value="Editer" onclick="editer()">
+        </fieldset>
+    </form>
+</body>
+</html>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>pourcentages</td>
+    </tr>
+    <tr>
+        <td>N°</td>
+        <td>Question</td>
+        <td>"oui"</td>
+        <td>"Non"</td>
+        <td>"Sans avis"</td>
+    </tr>
+    <tr>
+        <td>numq</td>
+        <td>contenu</td>
+        <td>$oui</td>
+        <td>$non</td>
+        <td>$sans</td>
+    </tr>
+    </table>

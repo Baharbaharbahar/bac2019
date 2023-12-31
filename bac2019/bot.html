@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="controles.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2 >Votre profil:</h2>
+    <form class="gras" action="" method="post" onsubmit="return verif()" id="form">
+        <fieldset>
+          <label class="largeur" for="genre">Vous êtes:</label>
+          <input type="radio" id="homme" name="genre" value="Mr"> Mr 
+          <input type="radio" id="femme" name="genre" value="Mme"> Mme<br>
+          <label class="largeur" for="cin">CIN:</label>
+          <input class="largeur" type="text" id="cin" placeholder="Votre CIN">
+          <label class="largeur1" for="edit">Edité le:</label>
+          <input class="largeur" type="text" id="edit" placeholder="jj/mm/aaaa"><br>
+          <label class="largeur" for="np">Nom & Prénom:</label>
+          <input class="largeur" type="text" id="np" placeholder="Votre nom et prénom" onblur="correction()"><br>
+
+          <label class="largeur" for="oui">Avez-vous des attentes?</label>
+          <input type="radio" id="oui" name="att" onclick="active()"><label for="oui"> Oui</label>
+          <input type="radio" name="non" id="non" name="att"><label id="non"> Nom</label><br>
+          <label class="largeur" for="quoi">Lesquelles?</label>
+          <textarea name="" id="quoi" cols="25" rows="5" placeholder="Max 500 caractères..." disabled oninput="calcul()"></textarea>
+          <label class="largeur1" for="reste">Il vous reste:</label>
+          <input class="largeur" type="text" id="reste" disabled placeholder="500">caractères<br>
+          <input type="checkbox" id="conditions"  onfocus="activebt()">
+          <label for="conditions">J'accepte les termes et conditions générales</label>
+
+          <hr>
+          <div class="centrer" onmouseover="couleur()">
+            <input id="inscrire" type="submit" value="S'inscrire" class="bt" disabled>
+            <input id="annuler" type="reset" value="Annuler" class="bt">
+          </div>
+        </fieldset>
+    </form> 
+</body>
+</html>
